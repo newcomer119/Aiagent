@@ -3,7 +3,7 @@ from google import genai
 from dotenv import load_dotenv
 import sys
 from google.genai import types
-
+import functions.get_files_info as functions
 
 def main():
     load_dotenv()
@@ -36,4 +36,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    print(functions.get_files_info("calculator"))
